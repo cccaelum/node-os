@@ -1,4 +1,4 @@
-const os = require('os');
+const os = require('node:os');
 
 function getNetworkInfo() {
     const networkInterfaces = os.networkInterfaces(); //devuelve un objeto de interfaces de red

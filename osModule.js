@@ -1,4 +1,4 @@
-const os = require('os'); // importamos el modulo os
+const os = require('node:os'); // importamos el modulo os, mejor usar node:os en vez de os
 
 function getOSInfo() {
     const osInfo = {
@@ -14,6 +14,7 @@ function getOSInfo() {
     return osInfo;
 }
 
+
 module.exports = {
     getOSInfo
-};
+};// exportamos en objeto si queremos traernos mas de una funcion, si solo es una no hace falta 
